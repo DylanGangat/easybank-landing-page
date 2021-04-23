@@ -1,0 +1,29 @@
+h1,
+h2,
+h3 {
+    color: var(--clr-primary-blue);
+    font-weight: var(--fw-300);
+    line-height: 1.3;  
+}
+
+.main-heading {
+    font-size: var(--fs-700);
+}
+
+.section-title {
+    font-size: var(--fs-600);   
+}
+
+.subtitle {
+    font-size: var(--fs-500);
+}
+
+.article-heading {
+    font-size: var(--fs-300); // and maybe everything in the article
+    font-weight: var(--fw-400);
+
+}
+
+.writer {
+    font-size: var(--fs-200);
+}
