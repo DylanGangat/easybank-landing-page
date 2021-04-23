@@ -1,0 +1,22 @@
+{
+  "name": "my-project-base-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "watch-sass": "sass --watch sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanGangat/My-Project-Base-Template.git"
+  },
+  "author": "dylangangat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanGangat/My-Project-Base-Template/issues"
+  },
+  "homepage": "https://github.com/DylanGangat/My-Project-Base-Template#readme",
+  "devDependencies": {
+    "sass": "^1.32.11"
+  }
+}
