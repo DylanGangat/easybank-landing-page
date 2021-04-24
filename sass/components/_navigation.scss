@@ -1,0 +1,36 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: relative;
+  
+    .overlay {
+      position: absolute;
+      // display: none;
+      top: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      background: var(--overlay-gradient);
+    }
+  
+    .nav-list {
+      --flow-spacer: 1rem;
+      background-color: var(--clr-neutral-100);
+      margin: 1.5rem;
+      padding: 2em 0;
+    }
+  
+    .nav-list a {
+      font-size: 1.1rem;
+      text-decoration: none;
+      color: var(--clr-primary-blue);
+    }
+  
+    .toggle-menu {
+        cursor: pointer;
+      //   padding: .5em;
+    }
+  }

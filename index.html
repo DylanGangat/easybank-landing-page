@@ -28,8 +28,8 @@
           <a href="#" class="logo">
             <img src="images/logo.svg" alt="easybank logo" />
           </a>
-          <div class="overlay">
-            <ul role="list" class="nav-list">
+          <div class="overlay" data-menu="hidden">
+            <ul role="list" class="nav-list flow-content">
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
@@ -39,10 +39,10 @@
           </div>
           <a href="#" class="btn">Request Invite</a>
           <div class="toggle-menu">
-            <span class="hamburger-icon">
+            <span class="hamburger-icon" data-menu="visible">
               <img src="images/icon-hamburger.svg" alt="hamburger icon" />
             </span>
-            <span class="close-icon hidden" data="hidden">
+            <span class="close-icon hidden" data-menu="hidden">
               <img src="images/icon-close.svg" alt="close icon" />
             </span>
           </div>
@@ -69,7 +69,7 @@
         <!-- close container -->
       </section>
       <section class="info">
-        <div class="container">
+        <div class="container flow-content info-grid">
           <header class="flow-content">
             <h2 class="section-title">Why choose Easybank?</h2>
             <p>
@@ -124,7 +124,7 @@
           <header>
             <h2 class="section-title">Latest Articles</h2>
           </header>
-          <div class="blog">
+          <div class="blog align-left">
             <!-- article 1 -->
             <article class="article">
               <div>

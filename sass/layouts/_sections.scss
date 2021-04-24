@@ -1,0 +1,54 @@
+section {
+  padding: 4.6rem 0;
+}
+
+.primary-header {
+  //   margin-top: 4rem; // remove when done testing
+  padding: 1.5rem 0;
+  background-color: var(--clr-neutral-100);
+  position: relative;
+  z-index: 999;
+  width: 100%;
+
+  .btn {
+    display: none;
+  }
+
+  [data-menu="hidden"] {
+    display: none;
+  }
+
+  [data-menu="visible"] {
+    display: block;
+  }
+}
+
+.hero {
+  padding-top: 0;
+  margin-top: -4rem;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .mockup {
+    transform: translateY(-3rem);
+  }
+
+  .description {
+    transform: translateY(-1rem);
+  }
+}
+
+.info {
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .info-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

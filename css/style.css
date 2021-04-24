@@ -73,6 +73,7 @@ body {
   --clr-neutral-200: hsl(0, 0%, 98%);
   --clr-neutral-300: hsl(220, 16%, 96%);
   --clr-neutral-400: hsl(233, 8%, 62%);
+  --clr-rgba-400: rgb(150, 152, 166);
   --ff-primary: "Public Sans", sans-serif;
   --fs-200: 0.6rem;
   --fs-300: 0.95rem;
@@ -83,6 +84,8 @@ body {
   --fw-300: 300;
   --fw-400: 400;
   --fw-700: 700;
+  --primary-gradient: linear-gradient(to right, var(--clr-primary-green), var(--clr-primary-cyan));
+  --overlay-gradient: linear-gradient(to bottom, rgb(45, 49, 77,.9), 50%,rgb(45, 49, 77,.3), 90%,rgb(45, 49, 77,.05));
   --max-width: 70rem;
 }
 
@@ -115,6 +118,96 @@ h3 {
   font-size: var(--fs-200);
 }
 
+.btn {
+  --flow-spacer: 2.3em;
+  display: inline-block;
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+  padding: 0.8em 2.3em;
+  background-image: var(--primary-gradient);
+  border-radius: 2rem;
+}
+
+.card img {
+  display: inline-block;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav .overlay {
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--overlay-gradient);
+}
+.main-nav .nav-list {
+  --flow-spacer: 1rem;
+  background-color: var(--clr-neutral-100);
+  margin: 1.5rem;
+  padding: 2em 0;
+}
+.main-nav .nav-list a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--clr-primary-blue);
+}
+.main-nav .toggle-menu {
+  cursor: pointer;
+}
+
+section {
+  padding: 4.6rem 0;
+}
+
+.primary-header {
+  padding: 1.5rem 0;
+  background-color: var(--clr-neutral-100);
+  position: relative;
+  z-index: 999;
+  width: 100%;
+}
+.primary-header .btn {
+  display: none;
+}
+.primary-header [data-menu=hidden] {
+  display: none;
+}
+.primary-header [data-menu=visible] {
+  display: block;
+}
+
+.hero {
+  padding-top: 0;
+  margin-top: -4rem;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero .mockup {
+  transform: translateY(-3rem);
+}
+.hero .description {
+  transform: translateY(-1rem);
+}
+
+.info .info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+.info .info-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
 .container {
   padding: 0 1.5rem;
   margin-left: auto;
@@ -122,12 +215,16 @@ h3 {
   max-width: var(--max-width);
 }
 
-.text-left {
+.align-left {
   text-align: left;
 }
 
 .flow-content > * + * {
   margin-top: var(--flow-spacer, 1em);
+}
+
+.split > * {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
