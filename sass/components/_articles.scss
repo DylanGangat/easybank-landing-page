@@ -1,0 +1,31 @@
+.blog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  --spacer: 2em;
+}
+
+.article {
+  img {
+    height: 12.5rem;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .info {
+    padding: 2.2em;
+    --flow-spacer: 0.6em;
+    background-color: var(--clr-neutral-100);
+  }
+
+  .writer {
+    font-size: var(--fs-200);
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: var(--clr-neutral-400);
+  }
+}

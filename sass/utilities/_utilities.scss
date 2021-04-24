@@ -5,10 +5,6 @@
   max-width: var(--max-width);
 }
 
-.align-left {
-  text-align: left;
-}
-
 .flow-content > * + * {
   margin-top: var(--flow-spacer, 1em);
 }
@@ -16,3 +12,15 @@
 .split > *{
   width: 100%;
 }
+
+.align-left {
+  text-align: left;
+}
+
+.spacer {
+  margin-top: var(--spacer, 4em);
+}
+
+
+
+
