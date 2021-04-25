@@ -1,17 +1,32 @@
 .blog {
   display: grid;
-  grid-template-columns: 1fr;
+  // grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   --spacer: 2em;
 }
 
 .article {
+  max-width: 20rem;
+  margin: 0 auto;
+
   img {
     height: 12.5rem;
     object-fit: cover;
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+
+  a {
+    color: var(--clr-primary-blue);
+    text-decoration: none;
+    transition: color 250ms ease-in-out;
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--clr-primary-green);
   }
 
   .info {

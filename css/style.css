@@ -32,6 +32,7 @@ ol[role=list] {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  color: inherit;
 }
 
 img {
@@ -84,6 +85,7 @@ body {
   --fw-400: 400;
   --fw-700: 700;
   --primary-gradient: linear-gradient(to right, var(--clr-primary-green), var(--clr-primary-cyan));
+  --primary-hover-gradient: linear-gradient(to right, rgb(49, 211, 92, .5), rgb(43, 183, 218, .5));
   --overlay-gradient: linear-gradient(to bottom, rgb(45, 49, 77,.9), 50%,rgb(45, 49, 77,.3), 90%,rgb(45, 49, 77,.05));
   --max-width: 70rem;
 }
@@ -119,17 +121,30 @@ h3 {
 
 .blog {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   --spacer: 2em;
 }
 
+.article {
+  max-width: 20rem;
+  margin: 0 auto;
+}
 .article img {
   height: 12.5rem;
   object-fit: cover;
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+.article a {
+  color: var(--clr-primary-blue);
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+.article a:hover,
+.article a:focus {
+  color: var(--clr-primary-green);
 }
 .article .info {
   padding: 2.2em;
@@ -152,15 +167,69 @@ h3 {
   padding: 0.8em 2.3em;
   background-image: var(--primary-gradient);
   border-radius: 2rem;
+  transition: background-image 950ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  background-image: var(--primary-hover-gradient);
 }
 
 .info-cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 2.5em;
 }
 .info-cards .card img {
   display: inline-block;
+}
+
+.main-footer {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-primary-blue);
+  padding: 2.2rem 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+  --flow-spacer: 0.7em;
+}
+.footer-grid .details > * + *,
+.footer-grid .socials > * + *,
+.footer-grid .cta > * + * {
+  margin: 2em 0 0 0;
+}
+.footer-grid .social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-grid .social-list > * + * {
+  margin-left: 1em;
+}
+.footer-grid .social-list img {
+  height: 1.6rem;
+  width: 1.6rem;
+  object-fit: cover;
+}
+.footer-grid .footer-nav > * + * {
+  margin: 1em 0 0 0;
+}
+.footer-grid .footer-nav a {
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+.footer-grid .social-list a svg path {
+  transition: fill 250ms ease-in-out;
+}
+.footer-grid .social-list a:hover path,
+.footer-grid .social-list a:focus path {
+  fill: var(--clr-primary-green);
+}
+.footer-grid .footer-nav a:hover,
+.footer-grid .footer-nav a:focus {
+  color: var(--clr-primary-green);
 }
 
 .main-nav {
@@ -241,10 +310,6 @@ section {
 
 .flow-content > * + * {
   margin-top: var(--flow-spacer, 1em);
-}
-
-.split > * {
-  width: 100%;
 }
 
 .align-left {

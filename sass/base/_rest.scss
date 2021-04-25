@@ -42,6 +42,7 @@ ol[role="list"] {
 
 a:not([class]) {
   text-decoration-skip-ink: auto;
+  color: inherit;
 }
 
 // Makes image easier to work with

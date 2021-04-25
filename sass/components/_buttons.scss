@@ -5,5 +5,11 @@
     text-decoration: none;
     padding: .8em 2.3em;
     background-image: var(--primary-gradient);
-    border-radius: 2rem;   
+    border-radius: 2rem;  
+    transition: background-image 950ms ease-in-out; 
+}
+
+.btn:hover,
+.btn:focus {
+    background-image: var(--primary-hover-gradient);
 }
