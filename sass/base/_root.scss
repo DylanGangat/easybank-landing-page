@@ -8,13 +8,12 @@
   --clr-neutral-300: hsl(220, 16%, 96%);
   --clr-neutral-400: hsl(233, 8%, 62%);
 
-
   --ff-primary: "Public Sans", sans-serif;
 
   --fs-200: 0.6rem;
   --fs-300: 0.95rem; // also on the footer-nav
-//   --fs-400: 1.125rem; desktop
-  --fs-400: .9rem; //mobile font-size 
+  //   --fs-400: 1.125rem; desktop
+  --fs-400: 0.9rem; //mobile font-size
   --fs-500: 1.2rem;
   --fs-600: 1.95rem;
   --fs-700: 2.4rem;
@@ -23,8 +22,31 @@
   --fw-400: 400;
   --fw-700: 700;
 
-  --primary-gradient: linear-gradient(to right, var(--clr-primary-green), var(--clr-primary-cyan));
-  --primary-hover-gradient: linear-gradient(to right,  rgb(49, 211, 92, .5), rgb(43, 183, 218, .5));
-  --overlay-gradient: linear-gradient(to bottom, rgb(45, 49, 77,.9), 50%,rgb(45, 49, 77,.3), 90%,rgb(45, 49, 77,.05));
-  --max-width: 70rem;
+  --primary-gradient: linear-gradient(
+    to right,
+    var(--clr-primary-green),
+    var(--clr-primary-cyan)
+  );
+  --primary-hover-gradient: linear-gradient(
+    to right,
+    rgb(49, 211, 92, 0.7),
+    rgb(43, 183, 218, 0.7)
+  );
+  --overlay-gradient: linear-gradient(
+    to bottom,
+    rgb(45, 49, 77, 0.9),
+    50%,
+    rgb(45, 49, 77, 0.3),
+    90%,
+    rgb(45, 49, 77, 0.05)
+  );
+  // --max-width: 70rem;
+  --max-width: 72rem;
+
+  @media (min-width: 50em) {
+    --fs-400: 1.125rem;
+    --fs-500: 1.45rem;
+    --fs-600: 2.4rem;
+    --fs-700: 3.4rem;
+  }
 }

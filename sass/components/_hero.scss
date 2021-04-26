@@ -1,0 +1,17 @@
+.hero-grid {
+    @media(min-width: 50em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        align-items: center;
+
+        .description {
+            max-width: 46ch;
+            order: 1;
+        }
+
+        .mockup {
+            order: 2;
+        }
+    }
+}

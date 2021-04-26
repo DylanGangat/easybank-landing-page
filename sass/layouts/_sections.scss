@@ -1,9 +1,12 @@
 section {
   padding: 4.6rem 0;
+
+  @media (min-width: 50em) {
+    padding: 6rem 0;
+  }
 }
 
 .primary-header {
-  //   margin-top: 4rem; // remove when done testing
   padding: 1.5rem 0;
   background-color: var(--clr-neutral-100);
   position: relative;
@@ -12,6 +15,9 @@ section {
 
   .btn {
     display: none;
+    @media(min-width: 50em) {
+      display: inline-block;
+    }
   }
 
   [data-menu="hidden"] {
@@ -21,12 +27,14 @@ section {
   [data-menu="visible"] {
     display: block;
   }
+
+  
 }
 
 .hero {
   padding-top: 0;
   margin-top: -4rem;
-  background-image: url("/images/bg-intro-mobile.svg");
+  // background-image: url("/images/bg-intro-mobile.svg"); // the original of what the mobile view was
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -36,6 +44,21 @@ section {
 
   .description {
     transform: translateY(-1rem);
+  }
+
+  // @media (min-width: 50em) {
+    
+  // }
+}
+
+.info {
+  background-color: var(--clr-neutral-300);
+
+  @media (min-width: 50em) {
+    header > p {
+      max-width: 62ch;
+    }
+    --flow-spacer: 1.5em;
   }
 }
 

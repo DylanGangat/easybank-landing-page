@@ -1,9 +1,13 @@
 .info-cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 2.5em;
-
+    font-size: var(--fs-300);
     .card img {
         display: inline-block;
-    }
+
+        @media (min-width: 50em) {
+            display: block;
+        }
+    } 
   }
