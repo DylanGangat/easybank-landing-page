@@ -274,13 +274,13 @@ h3 {
 }
 @media (min-width: 50em) {
   .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6em;
+    grid-template-columns: max-content 1fr;
+    gap: 4em;
   }
   .footer-grid .details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8em;
+    grid-template-columns: min-content 1fr;
+    gap: 5em;
   }
   .footer-grid .details > * + * {
     margin: 0 0 0 0;
@@ -343,6 +343,15 @@ h3 {
     width: auto;
   }
 }
+.main-nav .overlay.show {
+  display: block;
+}
+.main-nav .hamburger-icon.hidden {
+  display: none;
+}
+.main-nav .close-icon.hidden {
+  display: none;
+}
 .main-nav .nav-list {
   --flow-spacer: 1rem;
   background-color: var(--clr-neutral-100);
@@ -358,22 +367,21 @@ h3 {
     margin: 0;
   }
   .main-nav .nav-list > * + * {
-    margin-left: 1em;
+    margin-left: 1.5em;
   }
 }
 .main-nav .nav-list a {
-  position: relative;
   font-size: 1.1rem;
   text-decoration: none;
-  color: var(--clr-neutral-400);
 }
 @media (min-width: 50em) {
   .main-nav .nav-list a {
-    transition: color 250ms ease-in-out, border 250ms ease-in-out;
-    padding-bottom: 0.7em;
+    font-size: var(--fs-300);
+    transition: color, border 250ms ease-in-out;
+    padding-bottom: 2.3em;
     border-bottom: 2px solid transparent;
   }
-  .main-nav .nav-list a:hover {
+  .main-nav .nav-list a:hover, .main-nav .nav-list a:focus {
     color: #000;
     border-bottom: 2px solid var(--clr-primary-green);
   }
@@ -411,14 +419,9 @@ section {
     display: inline-block;
   }
 }
-.primary-header [data-menu=hidden] {
-  display: none;
-}
-.primary-header [data-menu=visible] {
-  display: block;
-}
 
 .hero {
+  background-color: var(--clr-neutral-200);
   padding-top: 0;
   margin-top: -4rem;
   background-repeat: no-repeat;
@@ -429,6 +432,20 @@ section {
 }
 .hero .description {
   transform: translateY(-1rem);
+}
+@media (min-width: 50em) {
+  .hero {
+    position: relative;
+    margin-top: 0;
+  }
+  .hero .mockup {
+    transform: translateY(0);
+    height: 30rem;
+  }
+  .hero .description {
+    align-self: center;
+    transform: translateY(0);
+  }
 }
 
 .info {

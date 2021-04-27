@@ -60,13 +60,13 @@
   }
 
   @media (min-width: 50em) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 6em;
+    grid-template-columns: max-content 1fr ;
+    gap: 4em;
 
     .details {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8em;
+      grid-template-columns: min-content 1fr;
+      gap: 5em;
     }
 
     .details > * + * {
