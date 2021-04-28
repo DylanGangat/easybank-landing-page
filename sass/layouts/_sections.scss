@@ -15,73 +15,72 @@ section {
 
   .btn {
     display: none;
-    @media(min-width: 50em) {
+    @media (min-width: 50em) {
       display: inline-block;
     }
   }
-
-  // [data-menu="hidden"] {
-  //   display: none;
-  // }
-
-  // [data-menu="visible"] {
-  //   display: block;
-  // }
-
 }
 
 .hero {
   background-color: var(--clr-neutral-200);
   padding-top: 0;
-  margin-top: -4rem;
-  // height: 75vh;
-  // background-image: url("/images/bg-intro-mobile.svg"); // the original of what the mobile view was
-  background-repeat: no-repeat;
-  background-size: contain;
-  // position: relative;
-  // z-index: 1;
 
   .mockup {
-    transform: translateY(-3rem);
-  }
+    position: relative;
+    background-image: url("/images/bg-intro-mobile.svg"); // the original of what the mobile view was
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 17.5rem;
 
-  .description {
-    transform: translateY(-1rem);
-  }
-
-   @media (min-width: 50em) {
-     position: relative;
-      margin-top: 0;
-    // background-image:url("/images/bg-intro-desktop.svg");
-    // background-size: contain;
-    // background-position: top -8rem right -15rem;
-    // background-repeat: no-repeat;
-
-
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   background-image: url("/images/bg-intro-desktop.svg");
-    //   background-size: cover;
-    //   background-repeat: no-repeat;
-    //   height: 60rem;
-    //   width: 50%;
-    //   top: -10em;
-    //   right: 0;
-    //   bottom: 0;
-    //   z-index: -1;
-    //   // transform: translateX(20%);
-    // }
-
-    .mockup {
-      transform: translateY(0);
-      height: 30rem;
+    @media (min-width: 40em) {
+      min-height: 25rem;
+      background-position: center 70%;
     }
-  
-    .description {
-      align-self: center;
-      transform: translateY(0);
+
+    @media (min-width: 62em) {
+      height: 41rem;
+      background-image: none;
+    }
+  }
+
+  @media (min-width: 62em) {
+    margin-top: 0;
+    padding: 0;
+
+    .mockup::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      background-image: url("/images/bg-intro-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 123%;
+      width: 165%;
+      background-position: 0% 70%;
+    }
+  }
+
+  .mockup::after {
+    content: "";
+    display: block; // need this so image can be center aligned
+    position: absolute;
+    background-image: url("/images/image-mockups.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 93%;
+    height: 100%;
+    width: 100%;
+
+    @media (min-width: 40em) {
+      background-size: 52%;
+    }
+
+    @media (min-width: 62em) {
+      background-position: center 150%;
+      background-size: 94%;
+      width: 120%;
+      height: 122%;
+      left: 22%;
     }
   }
 }

@@ -2,38 +2,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // position: relative; // will mess the mobile nav up the margins wont work properly
-
-  // @media (max-width: 49.9em) {
-  //   .overlay {
-  //     position: absolute;
-  //     // display: none;
-  //     top: 100%;
-  //     bottom: 0;
-  //     left: 0;
-  //     right: 0;
-  //     width: 100vw;
-  //     height: 100vh;
-  //     background: var(--overlay-gradient);
-
-  //     //   @media (min-width: 50em) {
-  //     //     position: relative;
-  //     //     top: 0;
-  //     //     height: 0;
-  //     //     width: 0;
-  //     //   }
-  //   }
-  // }
+  min-height: 2.1rem;
 
   .overlay {
     position: absolute;
-    display: none; // use javascript to hide this make a class to toggle on this element in html example show
+    display: none; 
     top: 100%;
     bottom: 0;
     left: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 6em);
     background: var(--overlay-gradient);
 
     @media (min-width: 50em) {
@@ -44,7 +23,7 @@
     }
   }
 
-  //  Naviation toggle with javascript
+  //  Navigation toggle with javascript
 
   .overlay.show {
     display: block;
@@ -80,38 +59,27 @@
   .nav-list a {
     font-size: 1.1rem;
     text-decoration: none;
-    // color: var(--clr-neutral-400);
-    // transition: color, border 250ms ease-in-out;
-    //   padding-bottom: 0.7em;
-    //   border-bottom: 2px solid transparent;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid transparent;
+    transition: color, border 250ms ease-in-out;
 
-    //   &:hover,
-    //   &:focus {
-    //     color: #000;
-    //     border-bottom: 2px solid var(--clr-primary-green);
-    //   }
+    &:hover,
+    &:focus {
+      color: #000;
+      border-bottom: 2px solid var(--clr-primary-green);
+    }
 
     @media (min-width: 50em) {
       font-size: var(--fs-300);
-      transition: color, border 250ms ease-in-out;
       padding-bottom: 2.3em;
-      border-bottom: 2px solid transparent;
-
-      &:hover,
-      &:focus {
-        color: #000;
-        border-bottom: 2px solid var(--clr-primary-green);
-      }
     }
   }
 
   .toggle-menu {
     cursor: pointer;
-    //   padding: .5em;
+    padding: .5em;
     @media (min-width: 50em) {
       display: none;
     }
   }
-
-  
 }
