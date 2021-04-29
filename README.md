@@ -1,6 +1,6 @@
-# Frontend Mentor - Fylo dark theme landing page solution
+# Frontend Mentor - Easybank landing page solution
 
-This is a solution to the [Fylo dark theme landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents 📑
 
@@ -36,9 +36,9 @@ Desktop Design
 
 ### Links 🔗
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/61953e61-af99-4ee5-aa1c-247bf4c2cd17/deploy-status)](https://app.netlify.com/sites/dylangangat-fylo-dark-landing-page/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/054c2c7f-b8c3-4f01-89a5-f32e7e46bc5a/deploy-status)](https://app.netlify.com/sites/dylangangat-easybank-webisite/deploys)
 
-- Live Site URL: [Fylo landing page](https://dylangangat-fylo-dark-landing-page.netlify.app/)
+- Live Site URL: [Easybank landing page](https://dylangangat-easybank-landing-page.netlify.app/)
 
 ## My process
 
