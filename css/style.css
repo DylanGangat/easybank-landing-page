@@ -269,6 +269,9 @@ h3 {
 .footer-grid .footer-nav a:focus {
   color: var(--clr-primary-green);
 }
+.footer-grid .copyright {
+  color: var(--clr-neutral-400);
+}
 @media (min-width: 50em) {
   .footer-grid {
     grid-template-columns: max-content 1fr;
@@ -500,11 +503,11 @@ section {
 }
 @media (min-width: 62em) {
   .hero .mockup::after {
-    background-position: center 150%;
+    background-position: center 107%;
     background-size: 94%;
     width: 120%;
     height: 122%;
-    left: 22%;
+    left: 28%;
   }
 }
 

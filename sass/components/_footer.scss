@@ -59,8 +59,12 @@
     color: var(--clr-primary-green);
   }
 
+  .copyright {
+    color: var(--clr-neutral-400);
+  }
+
   @media (min-width: 50em) {
-    grid-template-columns: max-content 1fr ;
+    grid-template-columns: max-content 1fr;
     gap: 4em;
 
     .details {
@@ -75,12 +79,12 @@
 
     .footer-nav {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); 
+      grid-template-columns: repeat(2, 1fr);
       gap: 6em;
     }
 
     .footer-nav ul {
-        margin: 0;
+      margin: 0;
     }
 
     .cta {
