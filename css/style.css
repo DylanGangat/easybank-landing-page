@@ -331,7 +331,6 @@ h3 {
 }
 .main-nav .overlay {
   position: absolute;
-  display: none;
   top: 100%;
   bottom: 0;
   left: 0;
@@ -339,17 +338,23 @@ h3 {
   width: 100vw;
   height: calc(100vh - 6em);
   background: var(--overlay-gradient);
+  z-index: -2;
+  display: hidden;
+  transform: translateY(-100%);
+  transition: transform 450ms ease-in-out;
 }
 @media (min-width: 50em) {
   .main-nav .overlay {
     position: static;
-    display: block;
     height: auto;
     width: auto;
+    z-index: auto;
+    transform: translateY(0);
   }
 }
 .main-nav .overlay.show {
   display: block;
+  transform: translateY(0);
 }
 .main-nav .hamburger-icon.hidden {
   display: none;
@@ -418,6 +423,18 @@ section {
   z-index: 999;
   width: 100%;
 }
+.primary-header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--clr-neutral-100);
+  z-index: -1;
+}
 .primary-header .btn {
   display: none;
 }
@@ -430,6 +447,8 @@ section {
 .hero {
   background-color: var(--clr-neutral-200);
   padding-top: 0;
+  position: relative;
+  z-index: 1;
 }
 .hero .mockup {
   position: relative;

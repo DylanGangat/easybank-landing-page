@@ -13,6 +13,20 @@ section {
   z-index: 999;
   width: 100%;
 
+  // Created this so that i could use stacking context of primary-header. I used z-index to mainpulate the way the ovelay will go under the header but it will stay on top of the header but will go under the ::before because the z-index is lower the ::before but can go under the parent which is the primary-header
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-neutral-100);
+    z-index: -1;
+  }
+
   .btn {
     display: none;
     @media (min-width: 50em) {
@@ -24,6 +38,9 @@ section {
 .hero {
   background-color: var(--clr-neutral-200);
   padding-top: 0;
+  // animations will always be lower than primary-header but will always stack above info section
+  position: relative;
+  z-index: 1;
 
   .mockup {
     position: relative;

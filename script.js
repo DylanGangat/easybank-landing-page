@@ -1,4 +1,3 @@
-console.log('Hello World');
 const toggleBtn = document.querySelector('.toggle-menu');
 const overlay = document.querySelector('.overlay');
 const hamburger = document.querySelector('.hamburger-icon');
@@ -14,16 +13,10 @@ toggleBtn.addEventListener('click', e => {
         hamburger.classList.remove('hidden');
         close.classList.add('hidden');
     }
+});
 
-    // if(e.target.parentElement.classList.contains('hamburger-icon')) {
-    //     close.classList.remove('hidden');
-    //     hamburger.classList.add('hidden');
-    // };
-
-    // if(e.target.parentElement.classList.contains('close-icon')) {
-    //     hamburger.classList.remove('hidden');
-    //     close.classList.add('hidden');
-    // };
-
-    // console.log(e.target.parentElement);
+overlay.addEventListener('click', e => {
+    if(e.target.classList.contains('overlay')) {
+        overlay.classList.remove('show');
+    }   
 });
