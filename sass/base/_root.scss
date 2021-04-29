@@ -11,9 +11,8 @@
   --ff-primary: "Public Sans", sans-serif;
 
   --fs-200: 0.6rem;
-  --fs-300: 0.95rem; // also on the footer-nav
-  //   --fs-400: 1.125rem; desktop
-  --fs-400: 0.9rem; //mobile font-size
+  --fs-300: 0.95rem;
+  --fs-400: 0.9rem;
   --fs-500: 1.2rem;
   --fs-600: 1.95rem;
   --fs-700: 2.4rem;
@@ -21,6 +20,8 @@
   --fw-300: 300;
   --fw-400: 400;
   --fw-700: 700;
+
+  --max-width: 72rem;
 
   --primary-gradient: linear-gradient(
     to right,
@@ -40,8 +41,6 @@
     90%,
     rgb(45, 49, 77, 0.05)
   );
-  // --max-width: 70rem;
-  --max-width: 72rem;
 
   @media (min-width: 50em) {
     --fs-400: 1.125rem;

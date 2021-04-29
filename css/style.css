@@ -22,16 +22,13 @@ dd {
 }
 
 ul[class],
-ol[class],
-ul[role=list],
-ol[role=list] {
+ol[class] {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+a {
   color: inherit;
 }
 
@@ -90,6 +87,7 @@ body {
   --fw-300: 300;
   --fw-400: 400;
   --fw-700: 700;
+  --max-width: 72rem;
   --primary-gradient: linear-gradient(
     to right,
     var(--clr-primary-green),
@@ -108,7 +106,6 @@ body {
     90%,
     rgb(45, 49, 77, 0.05)
   );
-  --max-width: 72rem;
 }
 @media (min-width: 50em) {
   :root {
@@ -339,7 +336,6 @@ h3 {
   height: calc(100vh - 6em);
   background: var(--overlay-gradient);
   z-index: -2;
-  display: hidden;
   transform: translateY(-100%);
   transition: transform 450ms ease-in-out;
 }
