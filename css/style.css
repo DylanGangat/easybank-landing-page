@@ -398,12 +398,14 @@ h3 {
 }
 .main-nav .toggle-menu {
   cursor: pointer;
-  padding: 0.5em;
 }
 @media (min-width: 50em) {
   .main-nav .toggle-menu {
     display: none;
   }
+}
+.main-nav .toggle-menu img {
+  padding: 0.5em;
 }
 
 section {
@@ -481,8 +483,8 @@ section {
     background-image: url("/images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-size: 123%;
-    width: 165%;
-    background-position: 0% 70%;
+    width: 160%;
+    background-position: -9% 70%;
   }
 }
 .hero .mockup::after {

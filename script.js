@@ -7,9 +7,11 @@ toggleBtn.addEventListener('click', e => {
     overlay.classList.toggle('show');
 
     if(e.target.parentElement.classList.contains('hamburger-icon')) {
+        console.log(e.target);
         close.classList.remove('hidden');
         hamburger.classList.add('hidden');
     } else {
+        console.log(e.target);
         hamburger.classList.remove('hidden');
         close.classList.add('hidden');
     }

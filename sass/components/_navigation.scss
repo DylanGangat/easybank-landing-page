@@ -85,9 +85,12 @@
 
   .toggle-menu {
     cursor: pointer;
-    padding: 0.5em;
     @media (min-width: 50em) {
       display: none;
     }
+  }
+
+  .toggle-menu img {
+    padding: 0.5em;
   }
 }
