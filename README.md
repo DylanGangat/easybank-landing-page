@@ -73,7 +73,7 @@ grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 
 ### Useful resources 🔖
 
-[youtube](https://www.youtube.com/results?search_query=coder+coder) - I have to give credit where credit is due after struggling for a while with the hero section I went to youtube to get ideas on how I could make the pictures responsive and Coder Coder really help out with it. Youtube is a great place for guidance when you get stuck and can't find a solution on Stack Overflow or MDN.
+[Youtube](https://www.youtube.com/results?search_query=coder+coder) - I have to give credit where credit is due after struggling for a while with the hero section I went to youtube to get ideas on how I could make the pictures responsive and Coder Coder really help out with it. Youtube is a great place for guidance when you get stuck and can't find a solution on Stack Overflow or MDN.
 
 [Markup Validation Service](https://validator.w3.org/) - It is a good practice to validate your code before you deploy your websites and I found this website to be a good resource to bookmark.
 
