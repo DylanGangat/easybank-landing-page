@@ -55,7 +55,7 @@ Desktop Design
 
 This project was a bit more complex compared to my previous Front-end Mentor Challenge but I was determined to complete it and learnt a few things on the way.
 
-- I learnt how to make a responsive navigation that switches into a toggle menu. This really tested my critical thinking and planning skills. On how to set up the html.
+- I learnt how to make a responsive navigation that switches into a toggle menu. This really tested my critical thinking and planning skills on how to set up the html.
 
 - One of the most difficult parts of the project was figuring how to make the hero section responsive and on the way I learnt a lot more about positioning elements with background properties and stacking context.
 
