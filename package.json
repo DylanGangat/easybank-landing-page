@@ -2,7 +2,7 @@
   "name": "my-project-base-template",
   "version": "1.0.0",
   "description": "",
-  "main": "home.js",
+  "main": "index.js",
   "scripts": {
     "watch-sass": "sass --watch sass:css"
   },
